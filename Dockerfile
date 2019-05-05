@@ -23,7 +23,7 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime &&\
     curl https://bootstrap.pypa.io/get-pip.py -o /tmp/Resources/get-pip.py && python3 /tmp/Resources/get-pip.py &&\
     pip3 install virtualenv && virtualenv --no-site-packages /root/env && \
     systemctl enable zabbix-agent.service && yum clean all &&  rm -fr /tmp/Resources
-
+###
 EXPOSE 10050
 VOLUME ["/sys/fs/cgroup"]
 
